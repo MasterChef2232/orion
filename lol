@@ -602,7 +602,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	local MainWindow = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 10), {
 		Parent = Orion,
 		Size = UDim2.new(0, 420, 0, 260),
-		Position = UDim2.new(0, 100, 0, 100),
+		Position = UDim2.new(0.5, 210, 0.5, 131),
 		ClipsDescendants = true
 	}), {
 		--SetProps(MakeElement("Image", "rbxassetid://3523728077"), {
@@ -711,7 +711,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		TweenService:Create(LoadSequenceText, TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextTransparency = 0}):Play()
 		wait(2)
 		TweenService:Create(LoadSequenceText, TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextTransparency = 1}):Play()
-		MainWindow.Visible = false --CHANGE TO FALSE IF U WANT INVISIBLE
+		MainWindow.Visible = false
 		LoadSequenceLogo:Destroy()
 		LoadSequenceText:Destroy()
 	end 
