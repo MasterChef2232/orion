@@ -603,6 +603,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		Parent = Orion,
 		Size = UDim2.new(0, 420, 0, 260),
 		Position = UDim2.new(0.5, -210, 0.5, -130),
+		mainwindow.visible = false
 		ClipsDescendants = true
 	}), {
 		--SetProps(MakeElement("Image", "rbxassetid://3523728077"), {
